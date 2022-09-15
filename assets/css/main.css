@@ -1,0 +1,414 @@
+.btn-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+.btn{
+    border-radius: 8px;
+    background: #ffff;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    color: blue;
+}
+
+.btn p {
+    font-weight: 600;
+}
+
+.btn-no-margin {
+    margin: 0;
+}
+
+
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 0 30px;
+    background-color: var(--white-color) ;
+    height: 92px;
+}
+
+.header__container {
+    display: flex;
+    height: 92px;
+    color: var(--text-color);
+    align-items: center;
+}
+
+.header__container-logo img {
+    width: 185px;
+    height: 40px;
+    padding-right: 25px;
+}
+
+.header__container-searchbar {
+    width: 400px;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    background-color: #f7f6fb;
+    align-items: center;
+}
+
+.header__container-searchbar i{
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.header__container-searchbar input {
+    border: none;
+    background-color: #f7f6fb;;
+    line-height: 38px;
+    width: 80%;
+    outline: none;
+}
+
+.header__container-navbar {
+    display: flex; 
+    flex-grow: 1;
+    padding-left: 30px;
+}
+
+.header__container-nav:hover {
+    color: var(--base-color);
+}
+
+.header__container-nav {
+    padding: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.header__container-avt {
+    font-size: 35px;
+}
+
+/* Side Bar */
+.sidebar {
+    height: 100%;
+    font-size: 16px;
+    position: fixed;
+    width: 240px;
+    top: 92px;
+    left: 0;
+    padding: 0 30px;
+    color: #8182a0;
+    cursor: pointer;
+}
+
+.sidebar__title {
+    color: var(--base-color);
+    background-color: #f1f4fd;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.sidebar__title i,
+.sidebar__footer i {
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.sidebar__list li{
+    padding: 10px;
+    margin-left: 40px;
+    list-style-type: disc;
+}
+
+.sidebar__list li:hover {
+    color: var(--base-color);
+}
+
+.sidebar__footer {
+    padding: 12px;
+}
+
+.sidebar__img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ddd;
+}
+
+/* Content Section */
+.content {
+    position: relative;
+    top: 92px;
+    height: 100000px;
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    background-color: #f9f8fd;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.content__container {
+    
+}
+
+.content__container-section {
+    justify-content: space-between;
+}
+
+/* Slider */
+.content__container-slider-content {
+    display: flex;
+    height: 250px;
+    width: calc(70% - 30px);
+    background-color: #7571df;
+    border-radius: 12px;
+    padding: 15px 20px;
+    background-image: url(/macintosh/assets/img/slide1-img.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.content__container-slide1 {
+    width: 50%;
+}
+
+.content__container-slide1 h2 {
+    font-size: 28px;
+    color: #ffff;
+    line-height: 45px;
+}
+
+.content__container-slide1 p {
+    font-size: 16px;
+    color: #DCDBF3;
+}
+
+.content__container-slide1-img {
+   
+    
+}
+
+/* Tutorial */
+.content__container-tutorial-content {
+    width: 30%;
+    border-radius: 12px;
+    background-color: #fecfd1;
+    background-image: url(/macintosh/assets/img/tutorial.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.content__container-tutorial {
+    padding: 30px 20px;
+}
+
+.content__container-tutorial h3 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #262d52;
+    width: 72%;
+}
+
+.content__container-tutorial a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--base-color);
+}
+
+
+/* Last update */
+.content__container-update {
+
+}
+
+.content__container-heading{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px ;
+    padding: 30px 0;
+}
+
+.content__container-heading h2 {
+    font-size: 24px ;
+}
+
+.heading-all {
+    color: var(--base-color);
+    font-size: 18px;
+}
+
+.content__update-list {
+    height: 300px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px 15px;
+}
+
+.content__update-app {
+    
+}
+
+.content__update-appicon img {
+    width: 60px;
+}
+
+.content__update-appdesc {
+    padding-left: 16px;
+    width: 200px;
+    flex: 1;
+}
+
+.content__update-appdesc p,
+.btn-desc {
+    font-size: 12px;
+    font-weight: 450;
+    color: #b2abab;
+}
+
+.popular-tutorial {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__container-popular,
+.content__container-instruction {
+    width: calc(50% - 15px);
+}
+
+/* Popular */
+.content__popular-overal {
+    justify-content: space-between;
+
+}
+.content__popular-box {
+    height: 230px;
+    width: 50%;
+    border-radius: 12px;
+}
+
+.popular-img {
+    margin-left: 20px;
+    width: 68px;
+    height: 68px;
+}
+
+.content__popular-header {
+    height: 92px;
+    background-color: rgb(228 232 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px 12px 0 0;
+}
+.content__popular-footer ,
+.content__popular-body {
+    padding: 8px 12px;
+    height: 67px;
+    align-items: center;
+    background-color: var(--white-color);
+}
+
+.content__popular-body {
+    font-size: 13px;
+    border-bottom: 1px solid  #ddd;
+    border-width: 80%;
+}
+
+.content__popular-body p {
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+
+
+.content__popular-box:nth-child(3),
+.content__popular-box:nth-child(4) {
+    margin-top: 30px;
+}
+
+.content__popular-footer {
+    border-radius: 0px 0px 12px 12px;
+}
+
+.content__popular-footer {
+    font-size: 11.5px;
+}
+
+/* Content Tutorial */
+.content__container-slider {
+    height: 230px;
+    background-color: rgb(225, 231, 118);
+    border-radius: 12px;
+    padding: 30px 20px;
+    background-image: url(/macintosh/assets/img/tutorial/Teamwork-and-Startup.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content__container-slider h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.content__container-slider p {
+    font: 16px;
+    color: var(--text-color);
+}
+
+.content__error-body {
+    display: flex;
+}  
+
+.content__error-problem {
+
+} 
+
+.content__error-img {
+    width: calc(100% - 30px);
+    border-radius: 12px;
+    height: 250px;
+}
+
+.content__error-title {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content__error-desc {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.content__new-game {
+    background-image: url(/macintosh/assets/img/new-game/metro.jpg);
+    background-size: contain;
+    border-radius: 12px;
+    height: 550px;
+}
+
+.content__side-game {
+
+}
+
+.side-game__angrybird {
+    
+}
+
+.side-game__simulation {
+
+}
+
+.side-game__outlast {
+
+}
+
+
+
+
+
