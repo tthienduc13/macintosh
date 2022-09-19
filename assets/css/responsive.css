@@ -1,0 +1,110 @@
+/* PC */
+@media (min-width: 64em) {
+
+
+}
+
+/* Tablet & Mobile */
+
+@media (max-width: 63.9375em) {
+
+}
+
+/* Tablet */
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+}
+
+/* Mobile */
+@media (max-width: 46.1875em){
+    .header__container-logo {
+        flex-grow: 1;
+    }
+    
+    .header__container-searchbar,
+    .header__container-navbar {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        left: 0;
+    }
+
+    .content__container-slider-content {
+        margin-bottom: 20px;
+    }
+
+    .content__container-section {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .content__container-slider-content,
+    .content__container-tutorial-content {
+        width: 100%;
+        height: 250px;
+    }
+
+    .content__update-app {
+        width: 100%;
+        padding: 16px 0;
+    }
+
+    .popular-tutorial {
+        flex-direction: column;
+    }
+
+    .content__popular-box {
+        width: 100%;
+    }
+
+    .content__popular-overal {
+        padding: 15px;
+    }
+
+    .content__container-popular {
+        width: 100%;
+    }
+
+    .content__container-instruction {
+        width: 100%;
+    }
+
+    .content__error-body {
+        flex-direction: column;
+    }
+
+    .content__error-problem {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .game {
+        flex-direction: column;
+    }
+
+    .content__new-game {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content__side-game {
+        width: 100%;
+    }
+
+    .content__mostplay-body {
+        flex-direction: column;
+    }
+
+    .content__mostplay-game {
+        width: 100%;
+    }
+}
